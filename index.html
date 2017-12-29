@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Tempus.io</title>
+  
+  
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css'>
+
+      <link rel="stylesheet" href="css/style.css">
+
+  
+</head>
+
+<body>
+
+  <div id="wrapper">
+ 
+  <div id="displayer">
+  </div>
+    
+  <div id="timer">
+    <form>
+      <input type="number" id="min" min="0" max="59" value="00" 
+             oninput="validity.valid||(value='');" placeholder="59"/>
+      <span>:</span>
+      <input type="number" id="sec" min="0" max="60" value="00" 
+             oninput="validity.valid||(value='');" />
+      <input type="button" id="start" value="&#xf04b;" onclick="play()" />
+      <input type="button" id="stop" value="&#xf04c;" onclick="pause()" />
+      <input type="button" id="unstop" value="&#xf04b;" onclick="replay()" />
+      <input type="button" id="restart" value="&#xf021;" onclick="over()" />
+    </form>
+  </div>
+  
+</div>
+  
+  
+
+    <script  src="js/index.js"></script>
+
+
+
+
+</body>
+
+</html>
