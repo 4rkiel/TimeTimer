@@ -55,6 +55,12 @@ ctx.translate(options.size / 2, options.size / 2);
 
 
 
+function dingeling (){
+  var x = document.getElementById("audio"); 
+  x.play();
+}
+
+
 
 function overOut() {
 
@@ -175,6 +181,7 @@ function drawTime (){
             start.style.display = 'block';
 
             interout = setTimeout(fadeOut, 200);
+            dingeling();
 
             mn.disabled = false;
             sc.disabled = false;
